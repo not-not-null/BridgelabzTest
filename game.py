@@ -53,6 +53,9 @@ def logic():
 def userInput():
     print("User's turn")
     pos = input("Enter the position number as per the instructions above: ")
+    if !pos >=1 && pos <=9:
+        print("Enter numbers between 1-9")
+        userInput()
     if state[int(pos)] != "_":
         print("choose already, try again..")
         userInput()
