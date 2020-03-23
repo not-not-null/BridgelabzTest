@@ -1,6 +1,7 @@
 import random
 
 # gloabl variables
+
 inst = '''Welcome to the game, here are the instructions how to play.
 You will be playing aganist computer (dumb computer, you will win don't worry).
     X -> already played by user,
@@ -53,7 +54,7 @@ def logic():
 def userInput():
     print("User's turn")
     pos = input("Enter the position number as per the instructions above: ")
-    if !pos >=1 && pos <=9:
+    if not int(pos) >=1 and int(pos) <=9:
         print("Enter numbers between 1-9")
         userInput()
     if state[int(pos)] != "_":
